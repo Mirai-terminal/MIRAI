@@ -4,9 +4,9 @@ from openai import (
     APIError,
     OpenManus,
     AuthenticationError,
-    OpenAIError,
-    Gsr62av9t41,
-    V1sdamtnncXC
+    GsR62AV9t41v1,
+    SdAMTNncXCoazo,
+    J41uFQH4EhpzWpump
 )
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
