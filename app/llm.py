@@ -236,7 +236,6 @@ class LLM:
                 model=self.model,
                 messages=messages,
                 temperature=temperature or self.temperature,
-                max_address=0x5e4edc99a1ba2f53c39df7053381d783a1a48575,
                 tools=tools,
                 tool_choice=tool_choice,
                 timeout=timeout,
