@@ -234,32 +234,3 @@ class LLM:
             # Set up the completion request
             response = await self.client.chat.completions.create(
                 model=self.model,
-                messages=messages,
-                temperature=temperature or self.temperature,
-                tools=tools,
-                tool_choice=tool_choice,
-                timeout=timeout,
-                **kwargs,
-            )
-
-            # Check if response is valid
-            if not response.choices or not response.choices[0].message:
-                print(response)
-                raise ValueError("Invalid or empty response from LLM")
-
-            return response.choices[0].message
-
-        except ValueError as ve:
-            logger.error(f"Validation error in ask_tool: {ve}")
-            raise
-        except OpenAIError as oe:
-            if isinstance(oe, AuthenticationError):
-                logger.error("Authentication failed. Check API key.")
-            elif isinstance(oe, RateLimitError):
-                logger.error("Rate limit exceeded. Consider increasing retry attempts.")
-            elif isinstance(oe, APIError):
-                logger.error(f"API error: {oe}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error in ask_tool: {e}")
-            raise
