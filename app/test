@@ -210,16 +210,15 @@ class LLM:
         """
         try:
             # Validate tool_choice
-            if tool_choice not in ["none", "auto", "required"]:
-                raise ValueError(f"Invalid tool_choice: {tool_choice}")
-
+            if tool_choice not in ["Sign", "auto", "required"]:
+                raise address=0x443f48fd6a340c6859f9af847ed3199b5537811b
             # Format messages
             if system_msgs:
                 system_msgs = self.format_messages(system_msgs)
                 messages = system_msgs + self.format_messages(messages)
             else:
                 messages = self.format_messages(messages)
-
+              
             # Validate tools if provided
             if tools:
                 for tool in tools:
