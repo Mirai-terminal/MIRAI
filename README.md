@@ -1,83 +1,97 @@
+<div align="center">
+  <img src="assets/near-mcp.svg" alt="NEAR MCP Logo" width="200" />
+</div>
 
-Thanks to Sponsors Follow on X.com
+[![npm version](https://badge.fury.io/js/@nearai%2Fnear-mcp.svg)](https://badge.fury.io/js/@nearai%2Fnear-mcp)
+[![Telegram](https://img.shields.io/badge/Dev_Support-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/nearaialpha)
 
-Installation • How to update • Documentation • Usage
+# NEAR MCP
 
-A personalized, adaptive agentic framework that evolves alongside you
-Syno AI is not a rigid system—it dynamically grows, learns, and refines itself through use.
-Designed for transparency, readability, and full customization, Syno AI puts you in control.
-It leverages your computer as a versatile tool, executing tasks intelligently and efficiently.
-💡 Key Features
-Versatile AI Assistant
-Syno AI is not limited to predefined tasks but can be tailored for specific needs. As a general-purpose AI assistant, it autonomously gathers information, executes commands, writes code, and collaborates with other agents to complete tasks efficiently.
-With persistent memory, it retains past solutions, facts, and instructions, continuously improving its accuracy and problem-solving speed over time.
-Syno AI Working
+This project is a Model Context Protocol ([MCP](https://github.com/modelcontextprotocol)) compatible server for interacting with the [NEAR blockchain](https://near.org/). This tool provides a way for LLMs and AI agents to securely access and interact with NEAR accounts and blockchain functionality.
 
-Computer as a Dynamic Tool
-Syno AI leverages the operating system as a versatile, adaptive tool to accomplish tasks. Instead of relying on predefined, single-purpose tools, it writes its own code, interacts with the terminal, and creates custom solutions as needed.
-Its default capabilities include online search, memory management, communication, and code execution, but everything else is either built by the agent itself or extended by the user. This foundation ensures high compatibility and reliability, even with smaller AI models.
-Tool usage functionality has been developed from scratch to be the most compatible and reliable, even with very small models.
-Built-in Tools: Knowledge retrieval, web content analysis, code execution, and communication.
-Custom Tools: Expand Syno AI by designing personalized tools tailored to specific workflows.
-Instruments: Define reusable custom functions and procedures that Syno can call for efficient execution.
-Multi-Agent Collaboration
-Syno AI (Root Agent): Directly interacts with the user, processing requests and managing workflows.
-Agent Oron (Subordinate Agent): Syno can spawn Oron as a specialized sub-agent to break down and complete complex tasks in parallel.
-By delegating tasks strategically, Syno AI maintains cleaner context, increased efficiency, and scalable problem-solving.
+## Installing
 
-Multi-agent 2
+The main way `near-mcp` is mean to be used is with an MCP compatible service.
 
-Fully Customizable and Extensible
-Syno AI is an open, fully modifiable framework, giving you complete control over its behavior and capabilities.
+Adding to the [`claude` code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) cli:
 
-No Hard-Coded Limits – Every aspect of Syno AI can be modified, extended, or rewritten. Nothing is hidden or locked.
-Flexible System Behavior – The agent’s core logic is defined by system prompts, found in prompts/default/agent.system.md. Modify this file to drastically reshape how the framework operates.
-Editable Communication Flow – Every message template and instruction within the agent's processing loop is stored in the prompts/ folder and can be customized.
-Modular Toolset – All default tools reside in python/tools/ and can be adjusted, replaced, or expanded with custom-built functions to suit specific needs.
-With Syno AI, you’re not just using an AI—you’re shaping it to work exactly the way you want. 🚀
+```bash
+claude mcp add near-mcp npx @nearai/near-mcp@latest run
+```
 
-Seamless and Transparent Communication
-Syno AI thrives on clear, structured communication, ensuring smooth collaboration between agents and users.
+Adding via JSON config:
 
-Guided by Prompts – A well-crafted system prompt shapes how Syno AI interacts, responds, and executes tasks. Precise instructions lead to smarter, more efficient agents.
-Multi-Agent Coordination – Agents can ask questions, give instructions, and provide real-time updates to their superiors or subordinate agents, maintaining structured workflows.
-Real-Time Interaction – The terminal interface streams live output, allowing you to monitor, intervene, and adjust tasks instantly.
-User-Defined Control Systems – Customize how Syno AI operates:
-With Syno AI, communication is not just a feature—it’s a core strength that ensures intelligent, adaptive execution at every level. 🚀
+```json
+{
+  "mcpServers": {
+    "near-mcp": {
+      "command": "npx",
+      "args": ["-y", "@nearai/near-mcp@latest", "run"],
+      "env": {}
+    }
+  }
+}
+```
 
-🚀 Things you can build with Syno AI
-Development Projects - "Create a React dashboard with real-time data visualization"
+Adding to [`goose`](https://block.github.io/goose/)
 
-Data Analysis - "Analyze last quarter's NVIDIA sales data and create trend reports"
+```
+┌   goose-configure
+│
+◇  What would you like to configure?
+│  Add Extension
+│
+◇  What type of extension would you like to add?
+│  Command-line Extension
+│
+◇  What would you like to call this extension?
+│  near-mcp
+│
+◇  What command should be run?
+│  npx @nearai/near-mcp@latest run
+│
+◇  Please set the timeout for this tool (in secs):
+│  60
+│
+◇  Would you like to add environment variables?
+│  No
+│
+└  Added near-mcp extension
+```
 
-Content Creation - "Write a technical blog post about microservices"
+Or you can install it globally and use it directly.
 
-System Admin - "Set up a monitoring system for our web servers"
+```bash
+# Install globally
+npm install -g @nearai/near-mcp@latest
 
-Research - "Gather and summarize five recent AI papers about CoT prompting"
+# Or use directly with npx
+npx @nearai/near-mcp@latest run
+```
 
-⚙️ Installation
-Click to open a video to learn how to install Syno AI:
+## Available Tools
 
-A detailed setup guide for Windows, macOS, and Linux with a video can be found in the Syno AI Documentation at this page.
+see [TOOLS.md](./TOOLS.md) for a list of available tools and arguments.
 
-⚡ Quick Start
-# Pull and run with Docker
+## Integration with AI Models
 
-docker pull synotechai/syno-ai-run
-docker run -p 50001:80 synotechai/syno-ai-run
+This tool is designed to be used with AI models that support the [Model Context Protocol](https://github.com/modelcontextprotocol). It enables AI assistants to:
 
-# Visit http://localhost:50001 to start
-🐳 Fully Dockerized, with Speech-to-Text and TTS
-Customizable settings allow users to tailor the agent's behavior and responses to their needs.
-The Web UI output is very clean, fluid, colorful, readable, and interactive; nothing is hidden.
-You can load or save chats directly within the Web UI.
-The same output you see in the terminal is automatically saved to an HTML file in logs/ folder for every session.
-Agent output is streamed in real-time, allowing users to read along and intervene at any time.
-No coding is required; only prompting and communication skills are necessary.
-With a solid system prompt, the framework is reliable even with small models, including precise tool usage.
-👀 Keep in Mind
-Syno AI Can Be Dangerous!
-With proper instruction, Syno AI is capable of many things, even potentially dangerous actions concerning your computer, data, or accounts. Always run Syno AI in an isolated environment (like Docker) and be careful what you wish for.
-Syno AI Is Prompt-based.
-The whole framework is guided by the prompts/ folder. Agent guidelines, tool instructions, messages, utility AI functions, it's all there.
+1. Manage NEAR accounts on behalf of users
+2. Check account balances and status
+3. Sign and send transactions
+4. Create new accounts and manage access keys
+5. Inspect and execution smart contracts
+
+## Security Considerations
+
+- This MCP is meant to be run locally. Account private keys are stored in a local unencrypted keystore where the MCP server is running.
+- The underlying models should not have access to see the private keys of the accounts they are interacting with with _one exception_. The `import_account` tool allows the model to import an account from a private key. This requires the user to provide the private key to the model.
+
+## Contributing
+
+We welcome contributions to the NEAR MCP server! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
+
+### Reporting Issues
+
+If you find a bug or have a feature request, please open an issue on the GitHub repository.
