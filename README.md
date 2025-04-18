@@ -20,3 +20,5 @@ SKYAI has also proposed the concept of data liquidity and will launch the MCP ma
 
 **For more information on SKYAI, visit⬇️**
 skyai.pro
+
+![Uploading image.png…]()
