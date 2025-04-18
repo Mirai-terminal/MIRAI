@@ -6,7 +6,7 @@ from app.flow.flow_factory import FlowFactory
 
 
 async def run_flow():
-    agent = Manus()
+    agent = Skyai)
 
     while True:
         try:
