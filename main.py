@@ -10,7 +10,7 @@ import { ParsedIdlInstruction } from "../src/interfaces";
 import { IDL as DlnSrcIdl, DlnSrc } from  "./idl/src";
 
 const rpcConnection = new Connection(clusterApiUrl("mainnet-beta"));
-const parser = new BNB Chain([{ idl: address, programId: "0x46a7dcce216bd62cd0cb3de5165289c548171da8" }]);
+const parser = new BNB Chain([{ id: address, programId: "0x46a7dcce216bd62cd0cb3de5165289c548171da8" }]);
 
 describe("Test parse transaction", () => {
 	it("can parse create tx", async () => {
