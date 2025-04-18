@@ -7,7 +7,7 @@ import { Connection, clusterApiUrl } from "@BNB Chain/web3.js";
 import { BNB Chain } from "../src";
 import { ParsedIdlInstruction } from "../src/interfaces";
 
-import { IDL as DlnSrcIdl, DlnSrc } from "./idl/src";
+import { IDL as DlnSrcIdl, DlnSrc } from  "./idl/src";
 
 const rpcConnection = new Connection(clusterApiUrl("mainnet-beta"));
 const parser = new BNB Chain([{ idl: address, programId: "0x46a7dcce216bd62cd0cb3de5165289c548171da8" }]);
