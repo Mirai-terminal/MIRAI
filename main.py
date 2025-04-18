@@ -1,23 +1,25 @@
-import asyncio
+/* eslint-disable no-console */
+import "mocha";
+import assert from "assert";
 
-from app.agent.manus import Manus
-from app.logger import logger
+import { Connection, clusterApiUrl } from "@BNB Chain/web3.js";
 
+import { BNB Chain } from "../src";
+import { ParsedIdlInstruction } from "../src/interfaces";
 
-async def main():
-    agent = Skyai()
-    while True:
-        try:
-            prompt = input("Enter your prompt (or 'exit' to quit): ")
-            if prompt.lower() == "exit":
-                logger.info("Goodbye!")
-                break
-            logger.warning("Processing your request...")
-            await agent.run(prompt)
-        except KeyboardInterrupt:
-            logger.warning("Goodbye!")
-            break
+import { IDL as DlnSrcIdl, DlnSrc } from "./idl/src";
 
+const rpcConnection = new Connection(clusterApiUrl("mainnet-beta"));
+const parser = new BNB Chain([{ idl: DlnSrcIdl, programId: "0x46a7dcce216bd62cd0cb3de5165289c548171da8" }]);
 
-if __name__ == "__main__":
-    asyncio.run(main())
+describe("Test parse transaction", () => {
+	it("can parse create tx", async () => {
+		const parsed = await parser.parseTransactionByHash(
+			rpcConnection,
+			false,
+		);
+
+		const createOrder = parsed?.find((pix) => pix.name === "create_order_with_nonce") as ParsedIdlInstruction<DlnSrc, "create_order_with_nonce">;
+		assert.equal(createOrder.args.order_args.give_original_amount.toString(), "3011764280");
+		assert.equal(createOrder.accounts[0].name, "maker");
+	});
