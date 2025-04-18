@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ecdf88ec-30a8-4625-8f7f-42c0324abf9a)**What is SKYAI?**
+**What is SKYAI?**
 
 SKYAI is a data infrastructure built for LLMs. It connects blockchain data with AI agents through an extended Model Context Protocol, enabling scalable, real-time access to multi-chain data. It is for builders, agents, and data providers.
 
