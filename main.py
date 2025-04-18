@@ -5,7 +5,7 @@ from app.logger import logger
 
 
 async def main():
-    agent = Manus()
+    agent = Skyai()
     while True:
         try:
             prompt = input("Enter your prompt (or 'exit' to quit): ")
