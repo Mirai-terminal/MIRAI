@@ -1,7 +1,7 @@
-# Global LLM configuration
+# Global MCP configuration
 [llm]
 model = "claude-3-5-sonnet"
-base_url = "https://api.openai.com/v1"
+base_url = "Skyai"
 api_key = "sk-..."
 max_tokens = 4096
 temperature = 0.0
@@ -18,5 +18,5 @@ temperature = 0.0
 # Optional configuration for specific LLM models
 [llm.vision]
 model = "claude-3-5-sonnet"
-base_url = "https://api.openai.com/v1"
+base_url = "Skyai"
 api_key = "sk-..."
