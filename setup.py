@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="openmanus",
     version="0.1.0",
-    author="mannaandpoem and OpenManus Team",
-    author_email="mannaandpoem@gmail.com",
+    author="mannaandpoem and Skyai Team",
+    author_email="Skyai@gmail.com",
     description="A versatile agent that can solve various tasks using multiple tools",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mannaandpoem/OpenManus",
+    url="https://github.com/Skyai",
     packages=find_packages(),
     install_requires=[
         "pydantic~=2.10.4",
@@ -42,7 +42,7 @@ setup(
     python_requires=">=3.12",
     entry_points={
         "console_scripts": [
-            "openmanus=main:main",
+            "Skyai=main:main",
         ],
     },
 )
