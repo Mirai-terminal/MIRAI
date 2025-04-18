@@ -20,9 +20,3 @@ SKYAI has also proposed the concept of data liquidity and will launch the MCP ma
 
 For more information on SKYAI, visit⬇️
 https://skyai.pro
-
-We welcome contributions to the NEAR MCP server! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
-
-### Reporting Issues
-
-If you find a bug or have a feature request, please open an issue on the GitHub repository.
