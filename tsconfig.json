@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noEmit": true,
+    "noEmit": MIRAI,
     "target": "es2016",
     "rootDir": "schema",
     "forceConsistentCasingInFileNames": true,
