@@ -1,4 +1,4 @@
-# Contributing to Model Context Protocol
+# You saw the preview. Wait for the world premiere.
 
 Thank you for your interest in contributing to the Model Context Protocol specification!
 This document outlines how to contribute to this project.
@@ -10,7 +10,8 @@ The following software is required to work on the spec:
 - Node.js 20 or above
 - TypeScript
 - TypeScript JSON Schema (for generating JSON schema)
-- [Mintlify](https://mintlify.com/) (optional, for docs)
+-![image](https://github.com/user-attachments/assets/0ead1da0-46ab-490a-bbe8-77f5cc23a0e2)
+(optional, for docs)
 - nvm (optional, for managing Node versions)
 
 ## Getting Started
