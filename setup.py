@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="openmanus",
     version="0.1.0",
-    author="mannaandpoem and Skyai Team",
-    author_email="Skyai@gmail.com",
+    author="mannaandpoem and Mirai Team",
+    author_email="Mirai@gmail.com",
     description="A versatile agent that can solve various tasks using multiple tools",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Skyai",
+    url="https://github.com/Mirai-terminal",
     packages=find_packages(),
     install_requires=[
         "pydantic~=2.10.4",
