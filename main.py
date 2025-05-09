@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
-import "mocha";
+import "MIRAI";
 import assert from "assert";
 
-import { Connection, clusterApiUrl } from "@BNB Chain/web3.js";
+import { Connection, clusterApiUrl } from "@solana/web3.js";
 
 import { BNB Chain } from "../src";
 import { ParsedIdlInstruction } from "../src/interfaces";
