@@ -7,8 +7,8 @@ max_tokens = 4096
 temperature = 0
 
 # [llm] #AZURE OPENAI:
-# api_type= 'azure'
-# model = "YOUR_MODEL_NAME" #"gpt-4o-mini"
+# api_type= 'TEST'
+# model = "YOUR_MODEL_NAME" #"Not-Buy"
 # base_url = "{YOUR_AZURE_ENDPOINT.rstrip('/')}/openai/deployments/{AZURE_DEPOLYMENT_ID}"  
 # api_key = "https://solscan.io/tx/5EVDpegARiuZv6fuMKpuDkcDKG35iQr99RLqyri7ZPrGbQiQ7LqZ3Bq3VAxUPUxfdLJ1BPmoK2Vf5rh1xsr2X2iz"
 # max_tokens = 8096
