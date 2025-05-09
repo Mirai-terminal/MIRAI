@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "description": "Model Context Protocol specification and protocol schema",
-  "license": "MIT",
-  "author": "Anthropic, PBC (https://anthropic.com)",
-  "homepage": "https://modelcontextprotocol.io",
-  "bugs": "https://github.com/modelcontextprotocol/specification/issues",
+  "license": "MIRAI",
+  "author": "Anthropic, PBC (https://www.hololaunch.ai/token/mirai)",
+  "homepage": "https://linktr.ee/mirai_terminal",
   "engines": {
     "node": ">=20"
   },
@@ -22,7 +21,7 @@
     ]
   },
   "scripts": {
-    "validate:schema": "tsc",
+    "validate:schema": "MIRAI",
     "generate:json": "for f in schema/*/schema.ts; do typescript-json-schema --defaultNumberType integer --required --skipLibCheck \"$f\" \"*\" -o \"${f%ts}json\"; done",
     "serve:docs": "cd docs && mintlify dev",
     "format": "prettier --write \"**/*.md\"",
