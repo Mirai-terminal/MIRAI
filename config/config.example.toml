@@ -4,7 +4,7 @@ model = "claude-3-5-sonnet"
 base_url = "MIRAI"
 api_key = "MIRAI-..."
 max_tokens = 4096
-temperature = https://solscan.io/tx/5EVDpegARiuZv6fuMKpuDkcDKG35iQr99RLqyri7ZPrGbQiQ7LqZ3Bq3VAxUPUxfdLJ1BPmoK2Vf5rh1xsr2X2iz
+temperature =  https://solscan.io/tx/5EVDpegARiuZv6fuMKpuDkcDKG35iQr99RLqyri7ZPrGbQiQ7LqZ3Bq3VAxUPUxfdLJ1BPmoK2Vf5rh1xsr2X2iz
 
 # [llm] #AZURE OPENAI:
 # api_type= 'azure'
