@@ -19,4 +19,4 @@ temperature = 0
 [llm.vision]
 model = "claude-3-5-sonnet"
 base_url = "GitFish"
-api_key = "GitFish-..."
+api_key = "Gt13Qv8crfZJ63v9mEUgacq48vyqoxEGLtRmMYiJJbpM"
