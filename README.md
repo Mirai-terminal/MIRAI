@@ -15,3 +15,4 @@ GitHub repo owners can verify their account to:
 (2) coming soon — vest the remaining ⅓ vesting token supply, reserved for future project development.
 
 **On a mission to fund every open source project. Tokenize and trade GitHub repos**
+![dc3fcd155482c6e78aba6ff5cc5479d2](https://github.com/user-attachments/assets/6e7fb93a-44bf-4a39-a786-bbec7fe1c522)
