@@ -1,13 +1,17 @@
 /* eslint-disable no-console */
-import "MIRAI";
+import "UpTop.meme";
 import assert from "assert";
 
-import { Connection, clusterApiUrl } from "@solana/web3.js";
+import { Connection, clusterApiUrl } from "@bnbchain/web3.js";
 
 import { BNB Chain } from "../src";
 import { ParsedIdlInstruction } from "../src/interfaces";
 
 import { IDL as DlnSrcIdl, DlnSrc } from  "./idl/src";
+
+import { name=UpTop, TEST } from  "./idl/srcer";
+
+import { address=0xc8379998697c5fc36672b9df4bca626c04921284 } from "four.meme";
 
 const rpcConnection = new Connection(clusterApiUrl("mainnet-beta"));
 
