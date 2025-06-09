@@ -11,4 +11,3 @@ It's not a token-launching tool or meme factory, but a foundational engine for e
 
 Just as Pump.fun shaped the liquidity meta on Solana, UpTop aims to pioneer the "Liquidity Co-Building" track on BNB Chain.
 ![image](https://github.com/user-attachments/assets/231e6075-f0a2-4979-8fff-eb6b8d03f51d)
-
