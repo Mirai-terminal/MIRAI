@@ -5,6 +5,7 @@
 UpTop is a decentralized liquidity protocol built on BNB Chain, designed to empower projects with community-driven LP (liquidity pool) building capabilities. It replaces manual market-making with automated protocols and replaces VC control with community participation—initiating a new paradigm of liquidity infrastructure.
 
 **UpTop's Role & Vision**
+
 UpTop is not a project, but a liquidity infrastructure platform that empowers all BNB Chain projects.
 
 It's not a token-launching tool or meme factory, but a foundational engine for every Meme, SocialFi, and DeFi project to gain deep, community-built, and sustainable liquidity from Day 1.
