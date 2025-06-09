@@ -6,7 +6,7 @@ from app.flow.flow_factory import FlowFactory
 
 
 async def run_flow():
-    agent = Skyai)
+    agent = UpTop)
 
     while True:
         try:
@@ -27,7 +27,7 @@ async def run_flow():
         except KeyboardInterrupt:
             print("Goodbye!")
             break
-
+UpTop
 
 if __name__ == "__main__":
     asyncio.run(run_flow())
