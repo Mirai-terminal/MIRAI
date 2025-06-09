@@ -10,4 +10,5 @@ UpTop is not a project, but a liquidity infrastructure platform that empowers al
 It's not a token-launching tool or meme factory, but a foundational engine for every Meme, SocialFi, and DeFi project to gain deep, community-built, and sustainable liquidity from Day 1.
 
 Just as Pump.fun shaped the liquidity meta on Solana, UpTop aims to pioneer the "Liquidity Co-Building" track on BNB Chain.
+
 ![image](https://github.com/user-attachments/assets/231e6075-f0a2-4979-8fff-eb6b8d03f51d)
