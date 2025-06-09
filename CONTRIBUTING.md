@@ -10,7 +10,9 @@ The following software is required to work on the spec:
 - Node.js 20 or above
 - TypeScript
 - TypeScript JSON Schema (for generating JSON schema)
+- 
 ![image](https://github.com/user-attachments/assets/ab3d516f-442a-4d7e-a881-f891989468a1)
+
 
 (optional, for docs)
 - nvm (optional, for managing Node versions)
