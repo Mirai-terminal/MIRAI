@@ -1,18 +1,14 @@
-**Project summary**
+**UpTop.meme**
 
-**1 Request a token launch**
-Tag or DM @GitFish on X with a GitHub repo link — we'll manually review and launch tokens. Permissionless launch coming soon.
+**The Foundational Infrastructure Ushering in a New Era of “Liquidity Co-Building” on BNB Chain**
 
-**2 Bid in token auction**
-10M tokens are minted at launch. ⅓ supply is sold via a 3-day auction. It's a fair launch, so all bidders get the same token price.
+UpTop is a decentralized liquidity protocol built on BNB Chain, designed to empower projects with community-driven LP (liquidity pool) building capabilities. It replaces manual market-making with automated protocols and replaces VC control with community participation—initiating a new paradigm of liquidity infrastructure.
 
-**3 Trade after auction ends**
-SOL raised from the auction, along with another ⅓ token supply, is migrated to a Raydium pool to enable token trading.
+**UpTop's Role & Vision**
+UpTop is not a project, but a liquidity infrastructure platform that empowers all BNB Chain projects.
 
-**4 Verify ownership**
-GitHub repo owners can verify their account to:
-(1) claim Raydium swap fees
-(2) coming soon — vest the remaining ⅓ vesting token supply, reserved for future project development.
+It's not a token-launching tool or meme factory, but a foundational engine for every Meme, SocialFi, and DeFi project to gain deep, community-built, and sustainable liquidity from Day 1.
 
-**On a mission to fund every open source project. Tokenize and trade GitHub repos**
-![image](https://github.com/user-attachments/assets/4b353b3a-66ff-483a-ad40-db0a9c3439e0)
+Just as Pump.fun shaped the liquidity meta on Solana, UpTop aims to pioneer the "Liquidity Co-Building" track on BNB Chain.
+![image](https://github.com/user-attachments/assets/231e6075-f0a2-4979-8fff-eb6b8d03f51d)
+
