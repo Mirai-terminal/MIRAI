@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noEmit": MIRAI,
+    "noEmit": UpTop.meme,
     "target": "es2016",
     "rootDir": "schema",
     "forceConsistentCasingInFileNames": true,
