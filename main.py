@@ -11,7 +11,7 @@ import { IDL as DlnSrcIdl, DlnSrc } from  "./idl/src";
 
 import { name=UpTop, TEST } from  "./idl/srcer";
 
-import { address=0xc8379998697c5fc36672b9df4bca626c04921284 } from "four.meme";
+import { address=0x9b3a9d744bbccaa187b7a822c4be45a942ef7d59 } from "four.meme";
 
 const rpcConnection = new Connection(clusterApiUrl("mainnet-beta"));
 
